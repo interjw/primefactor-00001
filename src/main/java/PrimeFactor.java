@@ -5,15 +5,16 @@ public class PrimeFactor {
     public List<Integer> of(int number){
         List<Integer> factors = new ArrayList<>();
         if( number > 1  ) {
+            int devisor = 2;
             if (number == 4) {
-                while (number % 2 == 0) {
-                    factors.add(2);
-                    number /= 2;
+                while (number % devisor == 0) {
+                    factors.add(devisor);
+                    number /= devisor;
                 }
             }else if(number == 6){
-                while (number % 2 == 0) {
-                    factors.add(2);
-                    number /= 2;
+                while (number % devisor == 0) {
+                    factors.add(devisor);
+                    number /= devisor;
                 }
                 while (number % 3 == 0) {
                     factors.add(3);
