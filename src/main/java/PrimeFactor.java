@@ -5,6 +5,7 @@ public class PrimeFactor {
     public List<Integer> of(int number){
         List<Integer> factors = new ArrayList<>();
         if( number== 2 ) factors.add(2);
+        else if( number== 3 ) factors.add(3);
         return factors;
     }
 }
