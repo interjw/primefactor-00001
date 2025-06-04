@@ -18,6 +18,9 @@ public class PrimeFactor {
                         number /= devisor;
                     }
                 }
+            }else if(number == 9) {
+                factors.add(3);
+                factors.add(3);
             }else {
                 factors.add(number);
             }
