@@ -16,10 +16,12 @@ public class PrimeFactor {
                     factors.add(devisor);
                     number /= devisor;
                 }
-                while (number % 3 == 0) {
-                    factors.add(3);
-                    number /= 3;
+                devisor++;
+                while (number % devisor == 0) {
+                    factors.add(devisor);
+                    number /= devisor;
                 }
+                devisor++;
 
             }else {
                 factors.add(number);
