@@ -16,11 +16,6 @@ class PrimeFactorTest {
     }
 
     @Test
-    void factor() {
-       assertEquals(1,1);
-    }
-
-    @Test
     void testPrimefactorOf1() {
        assertEquals(Arrays.asList(),primefactor.of(1));
     }
